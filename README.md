@@ -31,6 +31,11 @@ BOT_IDENTITY = {
 }
 ```
 
+Also the BOT_ADMINS setting needs to be the full name of the user like:
+BOT_ADMINS = ('Guillaume Binet',)
+
+CHATROOM_RELAY is unsupported by this backend, you should leave it empty.
+
 ## Contributing
 
 1. Fork it!

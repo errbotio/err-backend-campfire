@@ -123,5 +123,5 @@ class CampfireBackend(ErrBot):
     def mode(self):
         return 'campfire'
 
-    def groupchat_reply_format(self):
-        return '@{0} {1}'
+    def prefix_groupchat_reply(self, message, identifier):
+        message.body = '@{0} {1}'.format(identifier.nick, message.body)
